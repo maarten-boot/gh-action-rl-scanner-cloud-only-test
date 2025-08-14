@@ -290,7 +290,7 @@ test_missing_status()
         echo "$msg"             >> $GITHUB_STEP_SUMMARY
         echo "description=$msg" >> $GITHUB_OUTPUT
         echo "status=error"     >> $GITHUB_OUTPUT
-
+        ls -laR "${A_DIR}/"
         exit 101
     }
 }
